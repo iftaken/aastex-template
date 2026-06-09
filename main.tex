@@ -1,0 +1,128 @@
+%% AASTeX v7.0.1 Template
+%% American Astronomical Society Journals
+%% https://journals.aas.org/aastex-package-for-manuscript-preparation/
+
+\documentclass[linenumbers]{aastex701}
+
+%% Optional class arguments:
+%%   twocolumn     : two text columns, 10pt font, single spaced (published style)
+%%   default       : one column, 10pt font, single spaced (default)
+%%   manuscript    : one column, 12pt font, double spaced
+%%   preprint      : one column, 12pt font, single spaced
+%%   preprint2     : two columns, 12pt font, single spaced
+%%   modern        : stylish single column, 12pt font, wider margins
+%%   linenumbers   : turn on line numbering (mandatory for AAS submissions)
+%%   trackchanges  : show added text in bold for revisions
+%%   anonymous     : hide authors/affiliations for dual anonymous review
+%%   longauthor    : print all affiliations after each author name
+%%   resetfootnote : reset footnote counter in body
+%%   longbib       : print article titles in references (mandatory for PSJ)
+
+%% User-defined macros
+\newcommand{\vdag}{(v)^\dagger}
+\newcommand\aastex{AAS\TeX}
+\newcommand\latex{La\TeX}
+
+%% Short title / authors for running headers (optional)
+%\shorttitle{Short Title}
+%\shortauthors{Author et al.}
+
+%% Submission dates (optional)
+%\received{January 1, 2026}
+%\revised{February 1, 2026}
+%\accepted{\today}
+
+%% Target journal (optional)
+%\submitjournal{ApJ}
+
+%% Watermark (optional)
+%\watermark{DRAFT}
+
+%% Graphics path (optional)
+%\graphicspath{{./}{figures/}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\title{Your Article Title}
+
+\author[orcid=0000-0000-0000-0001,sname=Author1]{First Author}
+\affiliation{Your Institution, Department}
+\email[show]{first.author@institution.edu}
+
+\author[orcid=0000-0000-0000-0002,sname=Author2]{Second Author}
+\affiliation{Another Institution, Department}
+\email{second.author@institution.edu}
+
+%% Collaboration (optional)
+%\collaboration{all}{(Your Collaboration Name)}
+
+\begin{abstract}
+Your abstract text goes here. The AAS Journals (ApJ, ApJL, AJ, PSJ) have
+a 250 word limit for abstracts. RNAAS manuscripts have a 150 word limit.
+Replace this text with your own abstract.
+\end{abstract}
+
+%% Keywords using Unified Astronomy Thesaurus (UAT) concepts
+\keywords{Keyword1 --- Keyword2 --- Keyword3}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Introduction}
+
+Your introduction text goes here. This template uses the AASTeX v7.0.1
+class file which no longer depends on REVTeX. Each author must have an
+email address.
+
+\section{Observations and Data}
+
+Describe your observations and data here.
+
+\section{Analysis and Results}
+
+Present your analysis and results here. You can include figures and tables.
+
+%% Example figure
+%\begin{figure}[ht!]
+%\plotone{example.png}
+%\caption{Figure caption describing the figure.}
+%\label{fig:example}
+%\end{figure}
+
+%% Example table
+%\begin{deluxetable}{lcc}
+%\tablecaption{Table caption \label{tab:example}}
+%\tablehead{
+%\colhead{Column 1} & \colhead{Column 2} & \colhead{Column 3}
+%}
+%\startdata
+%Value A & 1.0 & 2.0 \\
+%Value B & 3.0 & 4.0 \\
+%\enddata
+%\tablecomments{Optional table comments.}
+%\end{deluxetable}
+
+\section{Discussion and Conclusions}
+
+Discuss your results and present your conclusions here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Acknowledgments and Author Contributions
+%% Use these environments to allow anonymous review option
+
+\begin{acknowledgments}
+We thank our colleagues for helpful discussions and the anonymous
+referee for constructive feedback.
+\end{acknowledgments}
+
+%% Software citations
+%\software{Astropy \citep{2013A&A...558A..33A}}
+
+%% Facilities
+%\facility{HST}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Bibliography
+\bibliography{aastex701-sample}{}
+\bibliographystyle{aasjournalv7}
+
+\end{document}
